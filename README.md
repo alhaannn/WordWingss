@@ -1,4 +1,4 @@
-WordWings - Vocabulary Learning Platform
+``WordWings - Vocabulary Learning Platform``
 https://wordwingss.netlify.app/
 
 Introduction
@@ -7,7 +7,7 @@ WordWings is an interactive vocabulary learning platform designed to help users 
 I built this project to solve my own frustration with language learning apps that focus on isolated word memorization. WordWings helps users understand how words function in real contexts while adapting to individual learning patterns.
 
 
-Key Features
+Key Features :-
 * Contextual Learning: Every word comes with 3 usage examples from literature/media
 
 * Adaptive Spaced Repetition: Algorithm adjusts review timing based on performance
