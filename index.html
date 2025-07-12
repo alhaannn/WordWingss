@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordWings | AI Vocabulary Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="header-left">
+                    <h1><i class="fas fa-feather-alt"></i> WordWings</h1>
+                    <p class="subtitle">AI-powered vocabulary builder to enhance your technical communication skills</p>
+                </div>
+                
+                <div class="controls">
+                    <div class="toggle-label">
+                        <i class="fas fa-moon"></i>
+                        <label class="dark-mode-toggle">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <span class="slider"></span>
+                        </label>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="app-container">
+            <div class="control-panel">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="topic"><i class="fas fa-laptop-code"></i> Select Topic</label>
+                        <select id="topic">
+                            <option value="computer science fundamentals">Computer Science Fundamentals</option>
+                            <option value="data structures and algorithms">Data Structures & Algorithms</option>
+                            <option value="web development" selected>Web Development</option>
+                            <option value="artificial intelligence">Artificial Intelligence</option>
+                            <option value="cloud computing">Cloud Computing</option>
+                            <option value="system design">System Design</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="interview preparation">Interview Preparation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="level"><i class="fas fa-signal"></i> Difficulty Level</label>
+                        <select id="level">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate" selected>Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="count"><i class="fas fa-list-ol"></i> Words to Generate</label>
+                        <select id="count">
+                            <option value="3">3 Words</option>
+                            <option value="5" selected>5 Words</option>
+                            <option value="8">8 Words</option>
+                            <option value="10">10 Words</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="custom-topic-section">
+                    <label for="custom-topic"><i class="fas fa-edit"></i> Custom Topic</label>
+                    <div class="custom-topic-input">
+                        <input type="text" id="custom-topic" placeholder="Enter your own topic (e.g., 'Cloud Security')">
+                        <button id="use-custom-topic">
+                            <i class="fas fa-check"></i> Use
+                        </button>
+                    </div>
+                </div>
+                
+                <button id="generate-btn">
+                    <i class="fas fa-bolt"></i> Generate Vocabulary Words
+                </button>
+            </div>
+            
+            <div id="status-area"></div>
+            
+            <div class="word-container" id="words-container">
+                <!-- Word cards will be generated here -->
+            </div>
+            
+            <!-- Flashcards Section -->
+            <div class="learning-section">
+                <div class="section-title-large">
+                    <i class="fas fa-layer-group"></i> Flashcard Learning
+                </div>
+                <div class="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-front">
+                            <div class="flashcard-word" id="flashcard-word">Vocabulary</div>
+                            <div class="flashcard-hint">Click to flip and see definition</div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-content" id="flashcard-content">Definition will appear here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flashcard-nav">
+                    <button class="control-btn" id="prev-flashcard">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button class="control-btn" id="flip-flashcard">
+                        <i class="fas fa-sync"></i> Flip Card
+                    </button>
+                    <button class="control-btn" id="next-flashcard">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Quiz Section -->
+            <div class="quiz-container">
+                <div class="section-title-large">
+                    <i class="fas fa-question-circle"></i> Vocabulary Quiz
+                </div>
+                <div class="quiz-question" id="quiz-question">What does "ubiquitous" mean?</div>
+                
+                <div class="quiz-options" id="quiz-options">
+                    <!-- Options will be generated here -->
+                </div>
+                
+                <div class="quiz-nav">
+                    <button class="control-btn" id="prev-question">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button class="control-btn" id="submit-quiz">
+                        Submit Answer
+                    </button>
+                    <button class="control-btn" id="next-question">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="powered-by">
+                    <i class="fas fa-robot"></i> Response Generated By AI
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/alhaannn" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alhaaannnn/" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:alhantemporary@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <p>&copy; 2025 WordWings Vocabulary Builder</p>
+            </div>
+        </footer>
+    </div>
