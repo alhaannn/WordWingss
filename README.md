@@ -8,34 +8,34 @@ I built this project to solve my own frustration with language learning apps tha
 
 
 Key Features
-Contextual Learning: Every word comes with 3 usage examples from literature/media
+* Contextual Learning: Every word comes with 3 usage examples from literature/media
 
-Adaptive Spaced Repetition: Algorithm adjusts review timing based on performance
+* Adaptive Spaced Repetition: Algorithm adjusts review timing based on performance
 
-Pronunciation Practice: Voice recording with instant feedback
+* Pronunciation Practice: Voice recording with instant feedback
 
-Progress Visualization: Interactive learning maps and milestone tracking
+* Progress Visualization: Interactive learning maps and milestone tracking
 
-Multi-language Support: Currently English, Spanish, and French
+* Multi-language Support: Currently English, Spanish, and French
 
-Community Challenges: Weekly vocabulary competitions
+* Community Challenges: Weekly vocabulary competitions
 
 
-Future Roadmap
-Mobile app (React Native)
+Future Roadmap :-
+- Mobile app (React Native)
 
-AI-generated contextual examples
+- AI-generated contextual examples
 
-Collaborative learning spaces
+- Collaborative learning spaces
 
-Vocabulary podcast integration
+- Vocabulary podcast integration
 
-Chrome extension for web reading assistant
+- Chrome extension for web reading assistant
 
 
 
 Contributing
-We welcome contributions! Please read our contribution guidelines before submitting pull requests. Join our Discord community for real-time discussion.
+We welcome contributions! Please read our contribution guidelines before submitting pull requests. Join our Discord community (updating soon) for real-time discussion.
 
 License
 WordWings is released under the MIT License. See LICENSE for details.
